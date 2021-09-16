@@ -1,7 +1,6 @@
 package com.example.themoon.view;
 
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.BlurMaskFilter;
@@ -17,14 +16,11 @@ import android.graphics.Shader;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-
 import androidx.annotation.Nullable;
-
 import com.example.themoon.R;
 import com.example.themoon.entity.MeteorParam;
 import com.example.themoon.entity.StarParam;
 import com.example.themoon.utils.Unit;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,7 +44,7 @@ public class Meteor extends View {
     private List<StarParam> starParams = new ArrayList<>();
     private List<MeteorParam> meteorParams = new ArrayList<>();
 
-    /// 流星参数信息
+    //流星参数信息
     final int meteorWidth = 200;
     /**
      * 流星rectF
@@ -57,7 +53,7 @@ public class Meteor extends View {
     /// 流星的长度
     final float meteorHeight = 0.8f;
 
-    /// 流星的高度
+    //流星的高度
     final int radius = 10;
 
     /**
