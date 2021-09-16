@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weather_cloudy_light">
+        <item name="cloudy_light">#FF275E9A</item>
+        <item name="cloudy_tint_light">#1C223B</item>
+    </string-array>
+</resources>
