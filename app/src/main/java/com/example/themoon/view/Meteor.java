@@ -224,11 +224,6 @@ public class Meteor extends View {
         weatherPaint.setAntiAlias(true);
         weatherPaint.setStyle(Paint.Style.FILL);
 
-        /**
-         * CLAMP:以最后一个像素进行拉伸
-         * REPEAT:重复进行同样的渐变
-         * MIRROR:镜面翻转，等价于反向REPEAT
-         */
         starPaint = new Paint();
         starPaint.setMaskFilter(new BlurMaskFilter(1, BlurMaskFilter.Blur.NORMAL));
         starPaint.setColor(Color.WHITE);
