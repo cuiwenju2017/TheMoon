@@ -172,5 +172,5 @@
         android:id="@+id/iv_change"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/icon_change" />
+        android:background="@drawable/anim_gif" />
 </RelativeLayout>

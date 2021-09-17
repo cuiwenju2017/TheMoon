@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private Handler handler = new Handler(Looper.getMainLooper());
+    private AnimationDrawable anim;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         //立即调用
         handler.post(task);
+
+        // 提取帧动画
+        anim = (AnimationDrawable) binding.ivChange.getBackground();
+        //开始动画
+        anim.start();
 
         //平移
         ObjectAnimator animator1 = ObjectAnimator.ofFloat(binding.ivChange, "translationX", 1000f, 0f).setDuration(1000 * 10);
